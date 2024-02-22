@@ -1,0 +1,48 @@
+<div class="container-fluid mx-auto">
+    <div class="min-w-full border rounded lg:grid lg:grid-cols-5">
+      <div class="bg-chatCurrentColor border-r border-gray-300 lg:col-span-1">
+        
+        <ul class="overflow-auto h-[32rem]">
+          <h2 class="p-5 my-2 mb-2 ml-2 text-lg text-white border-b">MERANTIS</h2>
+          <button class="m-3 p-3 bg-gray rounded-full text-center w-200">+ New Chat</button>
+          <li>
+            <!---->
+          </li>
+        </ul>
+      </div>
+      <div class="hidden lg:col-span-4 lg:block">
+        
+        <div class="relative flex items-center p-3">
+            <button class="m-3 p-3 bg-chatCurrentColor rounded-2xl text-center w-200 text-white">ChatGPT 3.5</button>
+        </div>
+        <div class="lg:grid lg:grid-cols-3">
+            
+            <div class="lg:col-span-2">
+                <div class="bg-gray relative w-full p-6 overflow-y-auto h-[40rem]">
+                    <ul class="space-y-2">
+                    <!-- Conversation -->
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-between p-3 ml-5">
+                    <input type="text" placeholder="Send a message..."
+                    class="block w-full py-2 pl-4 bg-gray-100 outline-none focus:text-gray-700 border border-currentColor1"
+                    name="message" required />
+                    <button class="bg-currentColor text-white p-3">
+                    <svg class="w-5 h-5 text-gray-500 origin-center transform rotate-90" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                        d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="lg:col-span-1 bg-gray p-10">
+                <div class="rounded-lg bg-white h-full">
+                    <!-- Generated Documents will appear here -->
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

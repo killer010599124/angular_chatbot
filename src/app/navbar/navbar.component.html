@@ -1,45 +1,52 @@
-<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-md">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="text-xl block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">MERANTIS</a>
+<header class='py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] relative'>
+  <div class='flex flex-wrap items-center justify-between gap-5'>
+    <div class='flex items-center ml-auto lg:order-1'>
+      <ul id="collapseMenu" class='lg:!flex max-lg:hidden max-lg:w-full lg:space-x-10 max-lg:space-y-4 max-lg:my-4'>
+        <li class='group max-lg:border-b max-lg:py-2 relative'>
+          <a href='javascript:void(0)'
+            class='text-currentColor text-[19px] block'>Login<svg
+              xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block" viewBox="0 0 24 24">
+              <path
+                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                data-name="16" data-original="#000000" />
+            </svg>
+          </a>
+          <ul
+            class='absolute hidden group-hover:block shadow-lg bg-white px-6 pb-4 pt-6 space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50'>
+            <li class='border-b py-2 '><a [routerLink]="['/login']"
+                class='hover:text-[#007bff] text-gray-600 text-[15px] block'>Login</a></li>
+            <li class='border-b py-2 '><a [routerLink]="['/signup']"
+                class='hover:text-[#007bff] text-gray-600 text-[15px] block'>Signup</a></li>
+          </ul>
         </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 dark:hover:bg-gray-700 dark:text-white md:dark:bg-transparent">Consultancy</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 dark:hover:bg-gray-700 dark:text-white md:dark:bg-transparent">Products</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 dark:bg-gray-700 dark:text-white md:dark:bg-transparent">About Us</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 dark:bg-gray-700 dark:text-white md:dark:bg-transparent">Partners</a>
-        </li>
-        <li class="absolute sm:right-5 right-0 flex items-center">
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 dark:bg-gray-700 dark:text-white md:dark:bg-transparent">API Marketplace</a>
-        </li>
+        <li class='max-lg:border-b max-lg:py-2'><a [routerLink]="['/']"
+          class='text-[19px] font-bold text-currentColor block'>Home</a></li>
       </ul>
-    </div>
-    <li class="absolute sm:right-40 right-10 flex items-center">
-      <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:bg-gray-700 md:dark:bg-transparent">Login 
-        <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      <button id="toggle" class='lg:hidden ml-7'>
+        <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
         </svg>
       </button>
-      <!-- Dropdown menu -->
-      <div id="dropdownNavbar" class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-          <div class="py-1">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign up</a>
-          </div>
-      </div>
+    </div>
+    <ul id="collapseMenu" class='text-currentColor lg:!flex lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full'>
+      <li class='max-lg:border-b max-lg:bg-[#007bff] max-lg:py-2 px-3 max-lg:rounded'>
+        <a href='javascript:void(0)' id='sec-1'
+          class='block font-bold text-[15px]'>MERANTIS</a>
+      </li>
+      <li class='max-lg:border-b max-lg:py-2 px-3 max-lg:rounded'><a href='javascript:void(0)' id="sec-2"
+          class='block font-semibold text-[15px]'>Consultancy</a>
+      </li>
+      <li class='max-lg:border-b max-lg:py-2 px-3 max-lg:rounded'><a href='javascript:void(0)' id="sec-3"
+          class='block font-semibold text-[15px]'>Products</a>
+      </li>
+      <li class='max-lg:border-b max-lg:py-2 px-3 max-lg:rounded'><a href='javascript:void(0)' id="sec-4"
+          class='block font-semibold text-[15px]'>About Us</a>
+      </li>
+      <li class='max-lg:border-b max-lg:py-2 px-3 max-lg:rounded'><a href='javascript:void(0)' id="sec-5"
+        class='block font-semibold text-[15px]'>Partners</a>
     </li>
+    </ul>
   </div>
-</nav>
+</header>
